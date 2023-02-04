@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "resolveJsonModule": true,
+    "resolveJsonModule": true, /* Agregamos esta propiedad para poder usar importaciones de archivos Json dentro de nuestros componentes*/
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
