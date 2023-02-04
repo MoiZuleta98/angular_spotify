@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-:root {
+:root { /* root Propiedad de css para declarar variables de diseño*/
     --color-1: #1DB954;
     --color-2: #323232;
     --color-3: #000000;
@@ -21,7 +21,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background-color: var(--color-3);
+    background-color: var(--color-3); /* Establecemos las variables de diseño con la palabra reservada "var" */
     font-family: var(--font-family-1);
     font-size: var(--font-size-1);
     color: var(--color-4);
