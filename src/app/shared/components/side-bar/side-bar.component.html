@@ -1,61 +1,27 @@
 <div class="side-bar">
     <div><i class="uil uil-ellipsis-h"></i></div>
     <ul class="side-bar__list list-one">
-        <li>
+        <li *ngFor="let item of mainMenu.defaultOptions">
             <div class="list-wrapper-item">
-                <i class="uil uil-estate"></i>
-                <span class="side-bar__list list-label"> Home</span>
+                <i [ngClass]="['uil',item.icon]"></i>
+                <span class="side-bar__list list-label">{{item.name}}</span>
             </div>
         </li>
-        <li>
-            <div class="list-wrapper-item">
-                <i class="uil uil-search"></i>
-                <span class="side-bar__list list-label"> Buscador</span>
-            </div>
-        </li>
-        <li>
-            <div class="list-wrapper-item">
-                <i class="uil uil-chart"></i>
-                <span class="side-bar__list list-label"> Tu bibloteca</span>
-            </div>
-        </li>
-        
     </ul>
     <div class="side-bar__separator"></div>
     <ul class="side-bar__list list-two">
-        <li>
+        <li *ngFor="let item of mainMenu.accessLink">
             <div class="list-wrapper-item">
-                <i class="uil uil-plus-square"></i>
-                <span class="side-bar__list list-label"> Crear lista</span>
-            </div>
-        </li>
-        <li>
-            <div class="list-wrapper-item">
-                <i class="uil uil-heart-medical"></i>
-                <span class="side-bar__list list-label"> Canciones que te gustan</span>
+                <i [ngClass]="['uil',item.icon]"></i>
+                <span class="side-bar__list list-label">{{item.name}}</span>
             </div>
         </li>
     </ul>
     <div class="side-bar__separator line-separator"></div>
     <ul class="side-bar__list list-three">
-        <li>
+        <li *ngFor="let item of customOptions">
             <div class="list-wrapper-item">
-                <span class="side-bar__list list-label">Mi lista º1</span>
-            </div>
-        </li>
-        <li>
-            <div class="list-wrapper-item">
-                <span class="side-bar__list list-label">Mi lista º2</span>
-            </div>
-        </li>
-        <li>
-            <div class="list-wrapper-item">
-                <span class="side-bar__list list-label">Mi lista º3</span>
-            </div>
-        </li>
-        <li>
-            <div class="list-wrapper-item">
-                <span class="side-bar__list list-label">Mi lista º4</span>
+                <span class="side-bar__list list-label">{{item.name}}</span>
             </div>
         </li>
     </ul>
