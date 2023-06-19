@@ -1,3 +1,11 @@
 <div class="section--generic">
     <h1 class="section--generic__title">{{title}}</h1>
+
+    <div class="section--generic__player--zone">
+        <ul class="player--list" [ngClass]="{'card-small':mode === 'small','card-big':mode === 'big'}"> <!--yo voy a tener una clase q se llama card-small que solo se aplica si el modo es igual a small--> 
+            <li *ngFor="let player of dataTracks">
+                {{player.name}}
+            </li>
+        </ul>
+    </div>
 </div>
